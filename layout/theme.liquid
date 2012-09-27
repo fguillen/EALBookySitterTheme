@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>{{ shop.name }}</title>
+    {{ "reset.css" | stylesheet_tag }}
+    {{ "style.css" | stylesheet_tag }}
+
+    {{ content_for_header }}
+  </head>
+
+  <body>
+
+    <div id="header">
+      <a href="http://tienda.escritoalapiz.es"><img src="{{ 'escrito_logo_peque.jpg' | asset_url }}" /></a>
+    </div>
+
+    <div id="wrapper">
+
+      <div id="left-column">
+        <div id="menu">
+          <ul>
+            <li><a href="http://escritoalapiz.es">Ir a la Web</a></li>
+
+            <li>Tu carrito
+              <ul>
+                <li><a href="{{ 'x' | show_cart_url }}">{{ cart.items_count }} elementos</a></li>
+              </ul>
+            </li>
+
+            {% for collection in shop.collections %}
+              <li>{{ collection.name }}
+                <ul>
+                  {% for item in collection.items %}
+                    <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+                  {% endfor %}
+                </ul>
+              </li>
+            {% endfor %}
+          </ul>
+
+          <div id="menu-tools">
+            <ul>
+              <li><a href="https://www.facebook.com/pages/Escrito-a-L%C3%A1piz/146672305375792"><img src="{{ 'facebook.png' | asset_url }}" /></a></li>
+              <li><a href="https://twitter.com/escritoalapiz "><img src="{{ 'twitter.png' | asset_url }}" /></a></li>
+            </ul>
+          </div>
+        </div>
+      </div> <!-- left-column -->
+
+      <div id="right-column">
+        <div id="content">
+          {{ content_for_layout }}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

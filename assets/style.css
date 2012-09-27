@@ -1,0 +1,249 @@
+body {
+  font-family: "Andale mono", sans-serif;
+  font-size: 10.5px;
+  line-height: 11px;
+  padding: 0 0 40px 0;
+}
+
+a,
+p {
+  white-space: normal;
+}
+
+em {
+  font-style: italic;
+}
+
+.clear {
+  clear: both;
+}
+
+/* LAYOUT */
+
+#header {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+#wrapper {
+  width: 1020px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#left-column {
+  width: 180px;
+  float: left;
+}
+
+#right-column {
+  float: right;
+  width: 840px;
+}
+
+#content {
+}
+
+
+/* CART */
+
+#cart-summarize a {
+  background-color: #666;
+  color: white;
+  text-decoration: none;
+}
+
+#cart-summarize a:hover {
+  background-color: black;
+}
+
+/* MENU */
+#menu {
+  height: 100%;
+}
+
+#menu > ul > li {
+  font-size: 12px;
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  margin-bottom: 9px;
+}
+
+#menu > ul > li > ul > li {
+}
+
+#menu a {
+  color: #666;
+  text-decoration: none;
+}
+
+#menu a:hover {
+  color: white;
+  background-color: black;
+}
+
+
+#menu #menu-tools li {
+  display: inline;
+}
+
+#menu #menu-tools img{
+  width: 34px;
+  height: 34px;
+}
+
+#menu #menu-tools a,
+#menu #menu-tools a:hover {
+  text-decoration: none;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* ITEM */
+
+.item {
+  display: inline-block;
+  white-space: nowrap;
+  width: 840px;
+}
+
+.item .text {
+  width: 310px;
+  float: left;
+}
+
+.item .text h2 {
+  font-weight: bold;
+  font-size: 12;
+  margin-bottom: 5px;
+}
+
+.item .text a {
+  color: #666;
+  text-decoration: none;
+}
+
+.item .text a:hover {
+  color: white;
+  background-color: black;
+}
+
+.item .text strong {
+  font-weight: bold;
+}
+
+.item .text h3 {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.item .text p {
+  margin-bottom: 1em;
+}
+
+.item .images {
+  width: 520px;
+  float: right;
+}
+
+.item .images img {
+  margin-bottom: 10px;
+  width: 520px;
+}
+
+.item .images .wp-caption-text {
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* Comments */
+
+.item .comments {
+  margin-top: 20px;
+}
+
+.item .comments h3 {
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.item .comments input[type='text'],
+.item .comments textarea {
+  border: 1px solid #CCC;
+  padding: 5px;
+  width: 400px;
+}
+
+.item .comments textarea {
+  height: 100px;
+}
+
+.item .comments input[name='author'] {
+  width: 200px;
+}
+
+.item .comments p {
+  clear: both;
+}
+
+.item .comments label {
+  margin-top: 10px;
+  width: 60px;
+}
+
+.item .comments label,
+.item .comments input {
+  float: left;
+}
+
+.item .comments .form-allowed-tags,
+.item .comments .comment-notes,
+.item .comments #reply-title,
+.item .comments #comments h2 {
+  display:none;
+}
+
+.item .comments .form-submit input{
+  margin-top: 10px;
+  margin-left: 60px;
+  border: 1px solid #CCC;
+  padding: 5px;
+  width: 400px;
+}
+
+
+.item .comments #comments li {
+  padding: 20px;
+}
+
+.item .comments #comments h4 {
+  font-weight: bold;
+  color: #666;
+}
+
+.item .comments a {
+  color: #666;
+  text-decoration: none;
+}
+
+.item .comments a:hover {
+  color: white;
+  background-color: black;
+}
+
+.item .comments #comments p {
+  margin-top: 5px;
+}
+
+/* ATTACHMENT */
+
+.attachment #content .item .description {
+  display: none;
+}

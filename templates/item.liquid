@@ -1,0 +1,25 @@
+<div class="item">
+  <div class="info">
+    <div class="text">
+      <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+
+      <div class="description">
+        {{ item.description }}
+      </div>
+
+      <div class="controls">
+        <form action="{{ item | add_to_cart_url }}" method="post">
+          <span class="price">{{ item.price }}€</span>
+          <input type="submit" name="add" value="Añadir al Carro" />
+        </form>
+      </div>
+    </div>
+
+    <div class="images">
+      {% for image in item.images %}
+        <img src="{{ image.big }}" />
+      {% endfor %}
+    </div>
+  </div>
+</div> <!-- item -->
+
