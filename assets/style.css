@@ -38,7 +38,7 @@ a:hover {
 
 #wrapper {
   width: 1020px;
-  margin: 0 auto;
+  margin-left: 62px;
   overflow: hidden;
 }
 
@@ -105,12 +105,10 @@ a:hover {
   height: 34px;
 }
 
-#menu #menu-tools a,
-#menu #menu-tools a:hover {
-  text-decoration: none;
-  background-color: white;
-  padding: 0;
-  margin: 0;
+#menu #menu-tools {
+  border-top: 1px solid #797979;
+  width: 83px;
+  padding-top: 5px;
 }
 
 
