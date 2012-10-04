@@ -101,14 +101,17 @@ a:hover {
 }
 
 #menu #menu-tools img{
-  width: 34px;
-  height: 34px;
+  width: 24px;
+  height: 24px;
 }
 
 #menu #menu-tools {
-  border-top: 1px solid #797979;
   width: 83px;
   padding-top: 5px;
+}
+
+#menu #menu-tools a:hover {
+  background-color: white;
 }
 
 
@@ -239,13 +242,18 @@ a:hover {
 /* INDEX */
 
 #index .item {
-  width: 275px;
+  width: 163px;
   margin-right: 5px;
   margin-bottom: 5px;
   float: left;
 }
 
+#index .item img{
+  width: 163px;
+}
+
 #index h2 {
+  padding: 2px;
   text-align: right;
   font-weight: bold;
 }
